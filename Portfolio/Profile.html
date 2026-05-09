@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassey Andrei S. Feliciano - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container header-content">
+            <img id="profile-pic" src="Profile.jpg" alt="Cassey Andrei S. Feliciano - Profile Picture">
+            <div class="header-text">
+                <h1>Cassey Andrei S. Feliciano</h1>
+                <p>BSIT Student at Universidad de Dagupan</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Buttons -->
+    <nav id="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact Information</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <h2>Top of a morning to ya!</h2>
+            <p>This is a brief introduction to my background,</p>
+
+            <p>Welcome to my portfolio! I’m delighted to have you here. This space serves as a comprehensive showcase of my journey, skills, and projects within the field of Information Technology, built entirely using core web technologies including HTML, CSS, and JavaScript — reflecting not only my knowledge of technical concepts but also my ability to design, develop, and implement functional and interactive digital solutions.</p>
+
+            <p>Throughout my academic and practical experience, I have developed a strong foundation in key IT areas such as web development, system design, programming, database management, and technical problem-solving. I am passionate about turning ideas into functional applications, writing clean and efficient code, and continuously learning new tools and frameworks to keep up with the fast-evolving technology landscape. Whether it’s building responsive user interfaces, adding dynamic functionality, or optimizing performance, I always strive to create solutions that are both user-friendly and technically sound.</p>
+
+            <h2>What You Will Find Here</h2>
+            <p>This portfolio is organized into clear sections to help you easily explore my background and work. Below is an overview of what each section covers:</p>
+
+            <ul class="section-list">
+                <li><strong>About Me:</strong> Learn more about my educational journey, career goals, personal interests, and what drives my passion for technology and software development.</li>
+                <li><strong>Skills and Interest:</strong> A detailed breakdown of my proficiency in programming languages, web technologies, software tools, Interests, Games, and IT methodologies — including my hands-on experience working with HTML, CSS, JavaScript, and other related development tools.</li>
+                <li><strong>Project & Works:</strong> Explore the websites, applications, and systems I have developed or contributed to. Each entry includes a project overview, objectives, technologies used, my role and contributions, and access to working demos or source code repositories.</li>
+                <li><strong>Education & Certifications:</strong> A record of my academic achievements, relevant training programs, and industry-recognized certifications that validate my expertise and commitment to continuous learning.</li>
+                <li><strong>Work & Practical Experience:</strong> Details of my internships, on-the-job training, and collaborative projects where I applied my technical knowledge to solve real-world problems, meet project requirements, and work effectively within professional teams.</li>
+                <li><strong>Contact Information:</strong> Clear details on how you can reach out to me.</li>
+            </ul>
+
+            <p>I built this entire portfolio from the ground up using fundamental web development technologies to demonstrate my ability to structure content logically, design responsive and visually appealing layouts, and add interactive features that enhance the overall user experience. Every line of code and design choice reflects my focus on quality, functionality, and accessibility.</p>
+
+            <p class="closing-note">Please feel free to explore each section in detail. If you have any questions, feedback, or would like to discuss potential projects or opportunities, don’t hesitate to get in touch. Thank you for visiting, and I hope you enjoy browsing through my work! You can find everything about me in this portfolio. Feel free to explore the different sections.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>A student who just wants to make his parents proud and have fun with life.</p>
+            <p>I am a passionate BSIT Student with a strong interest in Information Technology. I enjoy playing computer 3D shooting games such as Valorant, Call of Duty: Warzone, Bloodstrike, and PUBG. I also like to eat while watching Anime on Netflix.</p>
+
+            <div class="game-gallery">
+                <h3>My Favorite Games</h3>
+                <div class="gallery-container">
+                    <!-- Game Card 1 -->
+                    <div class="gallery-item" onclick="openGameDesc(this)">
+                        <img src="Valorant.jpg" alt="Valorant Game Cover - Tactical 5v5 shooter">
+                        <p>Valorant</p>
+                        <div class="game-description">
+                            <h4>Valorant</h4>
+                            <p>A tactical 5v5 character-based shooter developed by Riot Games. It combines precise gunplay with unique agent abilities, requiring strategy, teamwork, and fast reflexes. I enjoy it for its competitive nature and the need to coordinate with teammates to win rounds.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" onclick="openGameDesc(this)">
+                        <img src="CODM.jpg" alt="Call of Duty: Warzone Cover - Battle Royale FPS">
+                        <p>Call of Duty: Warzone</p>
+                        <div class="game-description">
+                            <h4>Call of Duty: Warzone</h4>
+                            <p>A massive free-to-play battle royale game set in the Call of Duty universe. It features large-scale maps, various game modes, and realistic combat mechanics. I love the thrill of surviving against 150+ players and the wide range of weapons and vehicles available.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" onclick="openGameDesc(this)">
+                        <img src="bloodstrike.jpg" alt="Bloodstrike Game Image - Fast-paced mobile shooter">
+                        <p>Bloodstrike</p>
+                        <div class="game-description">
+                            <h4>Bloodstrike</h4>
+                            <p>A fast-paced, modern mobile FPS that focuses on quick matches and fluid movement. It offers customizable loadouts, multiple maps, and intense combat scenarios. It’s my go-to game when I want quick, action-packed sessions anytime, anywhere.</p>
+                        </div>
+                    </div>
+  
+                    <div class="gallery-item" onclick="openGameDesc(this)">
+                        <img src="pubg2.png" alt="PUBG Game Screenshot - Original Battle Royale">
+                        <p>PUBG</p>
+                        <div class="game-description">
+                            <h4>PUBG</h4>
+                            <p>The game that popularized the battle royale genre. Players parachute onto an island, scavenge for weapons and equipment, and fight to be the last person standing. I appreciate its realistic mechanics, large open maps, and the tension of every match.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interests">
+            <h2>Interests</h2>
+            <p>Beyond technology and gaming, I have a wide range of interests that keep me creative and active. I enjoy experimenting in the kitchen and learning new recipes, expressing myself through dance and singing, and unwinding by watching anime series and movies. Each of these hobbies helps me relax, learn new skills, and see things from different perspectives.</p>
+            <div class="interests-list">
+                <div class="interest-card">
+
+                    <img src="Cooking.jpg" alt="Cooking - Preparing delicious meals" class="interest-img">
+                    <h3>Cooking</h3>
+                    <p>Exploring flavors and creating delicious meals for family and friends.</p>
+                </div>
+                <div class="interest-card">
+
+                    <img src="Modeling.jpg" alt="Modeling" class="interest-img">
+                    <h3>Modeling</h3>
+                    <p>Presenting different looks and expressing emotions through poses, stance, and movement.</p>
+                </div>
+                <div class="interest-card">
+
+                    <img src="Singing.jpg" alt="Singing - Performing music" class="interest-img">
+                    <h3>Singing</h3>
+                    <p>Enjoying music and performing songs from various genres.</p>
+                </div>
+                <div class="interest-card">
+
+                    <img src="Pfp2.jpg" alt="Playing Videogames - Exploring virtual worlds" class="interest-img">
+                    <h3>Playing Videogames</h3>
+                    <p>Exploring virtual worlds, solving challenges, and competing with others.</p>
+                </div>
+                <div class="interest-card">
+
+                    <img src="Watching.png" alt="Watching Episodes - Anime and films" class="interest-img">
+                    <h3>Watching Episodes</h3>
+                    <p>Following anime series, films, and documentaries across different genres.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Throughout my studies and personal practice, I have developed a diverse set of technical and personal skills. These abilities allow me to approach problems from multiple angles, work effectively in teams, and continuously improve my craft.</p>
+            <div class="skills-container">
+                <div class="skill-card">
+                
+                    <img src="Taekwondo.jpg" alt="Taekwondo - Martial arts training" class="skill-img">
+                    <h3>Taekwondo</h3>
+                    <p>Discipline, focus, physical fitness, and self-defense techniques developed through years of training.</p>
+                </div>
+                <div class="skill-card">
+                 
+                    <img src="ComputerAsDis.jpg" alt="Computer Assembly - Building systems" class="skill-img">
+                    <h3>Computer Assembly & Disassembly ✔️</h3>
+                    <p>Expert knowledge of hardware components, system building, troubleshooting, and maintenance — certified through NC II training.</p>
+                </div>
+                <div class="skill-card">
+
+                    <img src="HTML.jpg.png" alt="HTML - Web markup language" class="skill-img">
+                    <h3>HTML ✔️</h3>
+                    <p>Proficient in structuring web content, creating semantic markup, and building accessible, standards-compliant web pages.</p>
+                </div>
+                <div class="skill-card">
+               
+                    <img src="CSS.jpg.png" alt="CSS - Styling web pages" class="skill-img">
+                    <h3>CSS ✔️</h3>
+                    <p>Skilled in styling layouts, creating responsive designs, using Flexbox/Grid, and implementing animations and visual effects.</p>
+                </div>
+                <div class="skill-card">
+                 
+                    <img src="JAVA.jpg.png" alt="Java - Programming language" class="skill-img">
+                    <h3>Java ✔️</h3>
+                    <p>Experience in object-oriented programming, developing applications, and solving logical problems using Java syntax and concepts.</p>
+                </div>
+                <div class="skill-card">
+                
+                    <img src="JS.jpg.png" alt="JavaScript - Web interactivity" class="skill-img">
+                    <h3>JavaScript ✔️</h3>
+                    <p>Able to add interactivity to websites, manipulate the DOM, handle events, and create dynamic user experiences.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>My academic journey and training have provided me with practical knowledge and hands-on experience that prepare me for real-world IT challenges. Below are my key educational milestones and certifications:</p>
+            <ul>
+                <li>
+                   
+                    <img src="dcnhs.jpg" alt="Dagupan City National High School" class="experience-img">
+                    <h3>Highschool Graduate at Dagupan City National High School - S.H.S</h3>
+                    <p>2024 - 2025 | Dagupan City, Pangasinan</p>
+                    <p>Completed my Senior High School education with a focus on technical-vocational tracks, building a strong foundation in computer-related subjects and general education.</p>
+                </li>
+                <li>
+                    
+                    <img src="NCII.jpg" alt="National Certificate II - Computer System Servicing" class="experience-img">
+                    <h3>National Certificate II in Computer System Servicing</h3>
+                    <p>Issued on: March 10, 2025 | Valid until: March 09, 2030 | at PHILCST</p>
+                    <ul>
+                        <li>45 Days of intensive training covering hardware installation, software configuration, network setup, and system troubleshooting.</li>
+                        <li>Successfully demonstrated competency in maintaining and repairing computer systems and networks according to industry standards.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="project">
+            <h2>Project</h2>
+            <div class="project-container">
+                <img src="5e6254da-eea6-45b0-86c4-a183660a4cf3.jpg" alt="BrotInvasion Game Screenshot - 2D action game interface" class="project-img">
+                <div class="project-description">
+                    <h3>Brot Invasion</h3>
+                    <p>BrotInvasion is an action-packed 2D game that we developed as part of our academic project. It features fast-paced gameplay where players do their best to survive against waves of invading enemies. The game includes different difficulty levels, power-ups, and scoring systems to enhance player engagement.</p>
+                    <p>This project helped me apply my programming knowledge in a practical way, from planning the game concept and designing user interfaces to writing clean code, debugging, and testing functionality. It also improved my problem-solving skills, teamwork, and taught me how to optimize performance for a smooth user experience across different devices.</p>
+                    <p><strong>Technologies Used:</strong> Java, Game Development Libraries, Object-Oriented Programming Principles.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>If you would like to connect with me regarding opportunities, collaborations, or just to share feedback — feel free to reach out through any of the channels below. I’m always open to meeting new people and discussing ideas related to technology, development, or shared interests.</p>
+
+            <p><i class="fas fa-envelope"></i> Email: casseyfeliciano@gmail.com</p>
+            <div class="contact-links">
+
+                <a href="https://www.instagram.com/casseyksksks/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+
+                <a href="https://www.facebook.com/cassey.andrei.73/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i> Facebook Profile
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Game card description toggle
+        function openGameDesc(card) {
+            card.classList.toggle('active');
+        }
+    </script>
+</body>
+<head>
+    <style>
+    
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        
+        #profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .interest-img, .skill-img, .experience-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .project-img {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+</html>
