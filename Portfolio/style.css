@@ -1,7 +1,4 @@
-/* --------------------------
-   1. GLOBAL VARIABLES
-   - Centralized colors & styles for easy updates
---------------------------- */
+/* GLOBAL VARIABLES */
 :root {
     /* Main Brand Colors */
     --primary: #1e90ff; 
@@ -9,7 +6,7 @@
     --accent: #f31212;
     --bg-light: #ffffff; 
     --text-light: #fffefe;
-    --text-dark: #222222;         /* Added dark text color */
+    --text-dark: #222222; 
 
 
     /* Header Gradients */
@@ -28,10 +25,7 @@
 }
 
 
-/* --------------------------
-   2. BASE STYLES
-   - Core page settings
---------------------------- */
+/* BASE STYLES */
 * {
     margin: 0;
     padding: 0;
@@ -46,7 +40,7 @@ body {
     transition: background 0.5s ease, color 0.5s ease;
 }
 
-/* Container - centers & limits content width */
+
 .container {
     width: 80%;
     max-width: 1200px; 
@@ -56,9 +50,7 @@ body {
 }
 
 
-/* --------------------------
-   3. HEADER SECTION
---------------------------- */
+/* HEADER SECTION */
 #main-header {
     background: var(--header-light);
     color: #ffffff;
@@ -115,9 +107,7 @@ body {
 }
 
 
-/* --------------------------
-   4. NAVIGATION BAR
---------------------------- */
+/*  NAVIGATION BAR */
 #main-nav {
     background: var(--nav-bg-light);
     padding: 15px 0;
@@ -150,9 +140,7 @@ body {
     background-color: rgba(255,255,255,0.1);
 }
 
-/* --------------------------
-   5. CONTENT SECTIONS - DEFAULT CARD STYLE
---------------------------- */
+/* CONTENT SECTIONS */
 section {
     padding: 40px; 
     margin-bottom: 40px; 
@@ -178,20 +166,11 @@ section h2 {
     transition: var(--transition);
 }
 
-body.dark-mode section h2 {
-    color: var(--accent);
-    border-bottom-color: var(--primary); 
-}
-
 section p {
     font-size: 1.1em;
     margin-bottom: 15px;
     color: var(--text-light);
     transition: color 0.4s ease;
-}
-
-body.dark-mode section p {
-    color: var(--text-dark);
 }
 
 ul {
@@ -202,11 +181,6 @@ li {
     margin-bottom: 15px;
     font-size: 1.1em;
 }
-
-/* --------------------------
-   5.1 REMOVE CARD STYLE FOR SPECIFIC SECTIONS
-   + FIX TEXT COLOR TO DARK FOR READABILITY
---------------------------- */
 #home, #about {
     background: transparent;
     border-radius: 0;
@@ -215,7 +189,7 @@ li {
     padding: 0 0 40px 0;
     margin-bottom: 40px;
     transform: none !important;
-    color: var(--text-dark);  /* Make text dark */
+    color: var(--text-dark);  
 }
 
 #home:hover, #about:hover {
@@ -234,13 +208,11 @@ li {
 
 #home p, #about p,
 #home li, #about li {
-    color: var(--text-dark);   /* Make all text dark */
+    color: var(--text-dark);   
 }
 
 
-/* --------------------------
-   6. LINKS
---------------------------- */
+/* LINKS */
 a {
     color: var(--primary);
     text-decoration: none;
@@ -253,9 +225,7 @@ a:hover {
     text-decoration: underline wavy;
 }
 
-/* --------------------------
-   7. CONTACT LINKS
---------------------------- */
+/*CONTACT LINKS*/
 .contact-links {
     display: flex;
     gap: 20px;
@@ -277,9 +247,7 @@ a:hover {
     text-decoration: none; 
 }
 
-/* --------------------------
-   8. GAME GALLERY
---------------------------- */
+/*  GAME GALLERY */
 .game-gallery {
     margin-top: 40px;
     text-align: center;
@@ -313,23 +281,23 @@ a:hover {
     position: relative;
     overflow: hidden;
     transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
-    height: 350px; /* Fixed height for all cards */
+    height: 350px;
 }
 .gallery-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.18);
 }
 .gallery-item img {
-    width: 100%;       /* Make image take full width */
-    height: 85%;       /* Take most of the card height */
-    object-fit: cover;  /* Crop image nicely to fill space */
+    width: 100%;     
+    height: 85%;     
+    object-fit: cover;  
     margin: 0;
-    border-radius: 0;   /* Remove rounded corners if not needed */
+    border-radius: 0;  
     transition: transform 0.4s ease;
 }
 
 .gallery-item:hover img {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05); 
 }
 
 .gallery-item > p {
@@ -339,7 +307,7 @@ a:hover {
     color: var(--text-light);
     transition: var(--transition);
 }
-/* Game Description (Hidden by Default) */
+/* Game Description */
 .game-description {
     position: absolute;
     bottom: 0;
@@ -364,9 +332,7 @@ a:hover {
     color: black;
     margin-bottom: 8px;
 }
-/* --------------------------
-   9. SKILLS SECTION (NEW CARDS)
---------------------------- */
+/* SKILLS SECTION */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -393,11 +359,6 @@ a:hover {
     transition: var(--transition);
 }
 
-body.dark-mode .skill-card h3 {
-    color: var(--accent);
-    border-bottom-color: var(--primary);
-}
-
 .skill-card p {
     font-size: 1em;
 }
@@ -408,16 +369,16 @@ body.dark-mode .skill-card h3 {
     padding: 15px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    height: 100%; /* Make all cards same height */
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .skill-img {
-    width: 100%;           /* Take full width of card */
-    height: 180px;         /* Fixed height for all images */
-    object-fit: contain;    /* Show entire image without stretching */
-    background-color: #e1d8d8; /* Light background if image is transparent */
+    width: 100%;           
+    height: 180px;        
+    object-fit: contain;    
+    background-color: #e1d8d8;
     border-radius: 6px;
     margin-bottom: 12px;
 }
@@ -428,14 +389,12 @@ body.dark-mode .skill-card h3 {
 }
 
 .skill-card p {
-    flex-grow: 1; /* Push text down evenly */
+    flex-grow: 1; 
     color: #555;
     font-size: 0.95rem;
 }
 
-/* --------------------------
-   10. INTERESTS SECTION
---------------------------- */
+/* INTERESTS SECTION */
 .interests-list {
     display: flex;
     flex-wrap: wrap;
@@ -465,9 +424,7 @@ body.dark-mode .skill-card h3 {
     transition: var(--transition);
 }
 
-/* --------------------------
-   11. PROJECT SECTION
---------------------------- */
+/* PROJECT SECTION */
 .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -489,24 +446,22 @@ body.dark-mode .skill-card h3 {
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* --------------------------
-   12. EXPERIENCE SECTION
---------------------------- */
+/*  EXPERIENCE SECTION */
 #experience ul li {
     list-style: disc;
     margin-left: 20px;
 }
 
 .experience-img {
-    width: 100%;            /* Make image take full width of the content area */
-    max-height: 250px;      /* Set a fixed maximum height for consistency */
-    object-fit: cover;       /* Crop image to fit perfectly without stretching */
+    width: 100%;            
+    max-height: 250px;   
+    object-fit: cover;   
     border-radius: var(--border-radius);
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    margin: 15px 0;          /* Add space above and below the image */
+    margin: 15px 0;          
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 .experience-img:hover {
-    transform: scale(1.02);  /* Slight zoom effect like other sections */
+    transform: scale(1.02); 
     box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
